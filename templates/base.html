@@ -1,0 +1,13 @@
+<html>
+<head><title>{% block title %}{% endblock title %}</title>
+<link href="static/bootstrap.css" rel="stylesheet">
+</head>
+<div class="container">
+	<hr>
+	{% block body %}{% endblock body %}
+	<br>
+	{% for message in get_flashed_messages() %}
+	        {{ message }}
+    {% endfor %}
+</div>
+</html>

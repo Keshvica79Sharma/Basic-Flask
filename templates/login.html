@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %}Login{% endblock title %}
+{% block body %}
+<h3> Please login </h3>
+<hr>
+<form method="post" action="">
+	<input type="text" name="mobile" placeholder="xxxxxxxxxx" required="required" value={{ request.form.mobile }}>
+	<input type="password" name="otp" placeholder="xxxx" required="required" value={{ request.form.otp }} >
+	<input type="submit" value="Login">
+</form>
+{% endblock body %}
