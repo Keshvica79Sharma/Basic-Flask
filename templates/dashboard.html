@@ -5,4 +5,25 @@
 This is your dashboard. You will see your data here.
 <br>
 <button><a href="logout">logout</a></button>
+<hr>
+POSTS
+<br>
+<div class="table-responsive">
+<table  class="table table-striped table-bordered table-hover">
+	<thead>
+	<tr>
+	<th>name</th>
+	<th>comments</th>
+	<tr>
+    </thead>
+	<tbody>
+	{%  for i in data %}
+	<tr>
+    <td>{{ i['name'] }}</td>
+    <td>{{ i['comment']}}</td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+</div>
 {% endblock body %}

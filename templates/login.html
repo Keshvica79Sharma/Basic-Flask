@@ -4,7 +4,9 @@
 <h3> Please login </h3>
 <hr>
 <form method="post" action="">
+	Mobile:
 	<input type="text" name="mobile" placeholder="xxxxxxxxxx" required="required" value={{ request.form.mobile }}>
+	OTP:
 	<input type="password" name="otp" placeholder="xxxx" required="required" value={{ request.form.otp }} >
 	<input type="submit" value="Login">
 </form>
